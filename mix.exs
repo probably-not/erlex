@@ -14,7 +14,8 @@ defmodule Erlex.MixProject do
       description: description(),
       package: package(),
       docs: docs(),
-      dialyzer: dialyzer()
+      dialyzer: dialyzer(),
+      compilers: [:yecc, :leex] ++ Mix.compilers()
     ]
   end
 
